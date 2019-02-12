@@ -2,10 +2,7 @@ package dicegame;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- */
-public final class Terningspill {
+public class Terningspill {
 
     public void leggTilSpiller() {
         Spiller[] spiller = null;
