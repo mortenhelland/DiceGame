@@ -1,11 +1,12 @@
 {
-    "configurations": [
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - App",
-            "request": "launch",
-            "mainClass": "dicegame.App",
-            "projectName": "dicegame"
-        }
-    ]
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - App",
+      "console": "integratedTerminal",
+      "request": "launch",
+      "mainClass": "dicegame.App",
+      "projectName": "dicegame"
+    }
+  ]
 }
