@@ -18,4 +18,7 @@ public final class Terningspill {
         String a = kopp.trill();
         System.out.println(a);
     }
+
+
+    
 }
