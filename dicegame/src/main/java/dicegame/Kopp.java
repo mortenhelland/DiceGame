@@ -11,6 +11,10 @@ public class Kopp {
 
     }
 
+    /**
+     * 
+     * @return the 2 dice values together in a string
+     */
     public String trill() {
         Terning t1 = new Terning();
         Terning t2 = new Terning();
@@ -19,7 +23,7 @@ public class Kopp {
         t1.setVerdi(random.nextInt(6) + 1);
         t2.setVerdi(random.nextInt(6) + 1);
 
-        return t1.getVerdi() + t2.getVerdi() + "";
+        return t1.getVerdi() + "" + t2.getVerdi() + "";
     }
 
     /**
