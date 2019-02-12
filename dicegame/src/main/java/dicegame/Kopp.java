@@ -22,11 +22,32 @@ public class Kopp {
         return t1.getVerdi() + t2.getVerdi() + "";
     }
 
+    /**
+     * @return the id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * @return the sum
+     */
     public int getSum() {
         return sum;
     }
+
+    /**
+     * @param sum the sum to set
+     */
+    public void setSum(int sum) {
+        this.sum = sum;
+    }
+
 }
