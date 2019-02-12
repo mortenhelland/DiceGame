@@ -18,4 +18,12 @@ public final class Terningspill {
         String a = kopp.trill();
         System.out.println(a);
     }
+
+    public void leggTilSpiller() {
+
+    }
+
+    public void spill() {
+
+    }
 }
