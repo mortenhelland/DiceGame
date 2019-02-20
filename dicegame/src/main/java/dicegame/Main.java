@@ -7,7 +7,8 @@ public class Main {
      */
     public static void main(String[] args) {
         Terningspill terningspill = new Terningspill();
-
-    
+        Kopp kopp = new Kopp();
+        System.out.println(kopp.trill());    
+        System.out.println(kopp.getSum());
     }
 }
