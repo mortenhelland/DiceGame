@@ -23,7 +23,9 @@ public class Kopp {
         t1.setVerdi(random.nextInt(6) + 1);
         t2.setVerdi(random.nextInt(6) + 1);
 
+        this.sum = t1.getVerdi() + t2.getVerdi();
         return t1.getVerdi() + "" + t2.getVerdi() + "";
+        
     }
 
     /**
