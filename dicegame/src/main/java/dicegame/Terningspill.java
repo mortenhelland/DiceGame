@@ -40,7 +40,16 @@ public Terningspill(int id){
             String navn = scanner.nextLine();
             leggTilSpiller(navn);
         }
-    
+
+        System.out.println("Yey! Alle spillerne er lagt til!");
+
+        for(int i = 0; i < antallSpillere; i++){
+            Kopp kopp = new Kopp();
+            System.out.println(players.get(i).getNavn() + " fikk: " + kopp.trill());
+            players.get(i).setVerdi(kopp.getSum());;
+        }
+
+
 
 
     }
