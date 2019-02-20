@@ -7,8 +7,8 @@ public class Spiller {
 
 
     public Spiller (String navn, int verdi) {
-this.navn=navn;
-this.verdi=verdi;
+        this.navn=navn;
+        this.verdi=verdi;
 
     }
 
