@@ -37,6 +37,7 @@ public Terningspill(int id){
         }
 
         for(int i = 0; i < antallSpillere; i++){
+            System.out.println("Spiller #" + i+1);
             String navn = scanner.nextLine();
             leggTilSpiller(navn);
         }
