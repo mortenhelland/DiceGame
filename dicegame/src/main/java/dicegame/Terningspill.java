@@ -37,20 +37,32 @@ public Terningspill(int id){
         }
 
         for(int i = 0; i < antallSpillere; i++){
-            System.out.println("Spiller #" + i+1);
+            System.out.println("Spiller #" + (i+1));
             String navn = scanner.nextLine();
             leggTilSpiller(navn);
         }
         
 
-        System.out.println("Yey! Alle spillerne er lagt til!");
-
+        System.out.println("Yey! Alle spillerne er lagt til!\n\n");
+        System.out.println("Resultatet er: \n");
+        
         for(int i = 0; i < antallSpillere; i++){
             Kopp kopp = new Kopp();
             System.out.println(players.get(i).getNavn() + " fikk: " + kopp.trill());
             players.get(i).setVerdi(kopp.getSum());;
-        
         }
+
+        Spiller vinner = new Spiller(null, 0);
+
+        for(int i=0; i<antallSpillere; i++){
+    
+            if(players.get(i).getVerdi() > vinner.getVerdi()){
+                vinner.setVerdi(players.get(i).getVerdi());
+                vinner.setNavn(players.get(i).getNavn());
+            }
+        }
+
+        System.out.println("The winner is " + vinner.getNavn() + " med " + vinner.getVerdi() );
 
 
 
