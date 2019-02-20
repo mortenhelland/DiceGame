@@ -40,7 +40,7 @@ public Terningspill(int id){
             String navn = scanner.nextLine();
             leggTilSpiller(navn);
         }
-
+    
 
 
     }
